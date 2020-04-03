@@ -1,0 +1,143 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SS</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	 <link href="bootstrap/css/bootstrapsss.min.css" rel="stylesheet" id="bootstrap-css">
+	  <script src="bootstrap/jquery.min.js"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container-fluid">
+	<div class="row">
+        <div class="col-md-12">
+          <h1>Secret Sharing</h1>
+        </div>
+      </div>
+	<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="https://shorturl.at/imLX7">What is Secret Sharing ?!</a></li>
+      <li><a href="#Encrypt">Encryption</a></li>
+	  <li><a href="#decrypt">Decryption</a></li>
+      <li><a href="https://github.com/ALbaron-Awad">Fork my on Github</a></li>
+	 ><link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet"><a class="bmc-button" target="_blank" href="https://www.buymeacoffee.com/as32vtP"><img src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg" alt="Buy me a coffee"><span style="margin-left:15px;font-size:28px !important;">Buy me a coffee</span></a>
+    </ul>
+	
+  </div>
+</nav>
+ 
+      <div class="row">
+        <div class="col-md-12" id="Encrypt">
+          <h2>Share a Secret</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <h3>Input</h3>
+          <div class="form-group">
+            <h4><label for="split-secret"> </label></h4>
+            <textarea class="form-control" id="split-secret" name="split-secret" rows="5" placeholder="Enter the secret here."></textarea>
+          </div>
+          
+          <div class="form-group" id="split-threshold-group">
+            <h4><label for="split-threshold">Threshold</label></h4>
+            <input type="number" class="form-control" id="split-threshold" placeholder="How many threshold are required?">
+            <span class="glyphicon glyphicon-remove form-control-feedback sr-only" id="split-threshold-error-icon"></span>
+            <span class="help-block" style="color: #C9302C" id="split-threshold-error"></span>
+          </div>
+          
+          <div class="form-group"  id="split-total-group">
+            <h4><label for="split-total">Shares</label></h4>
+            <input type="number" class="form-control" id="split-total" placeholder="How many Shares? ">
+            <span class="glyphicon glyphicon-remove form-control-feedback sr-only" id="split-total-error-icon"></span>
+            <span class="help-block" style="color: #C9302C" id="split-total-error"></span>
+          </div>
+          
+          <button type="button" class="btn btn-primary" id="split-btn">Encrypt</button>
+        </div>
+        <div class="col-md-6">
+          <h3>Output</h3>
+          
+          <div class="form-group">
+            <label for="split-output">Shared Secrets</label>
+            <textarea class="form-control" id="split-output" name="split-output" rows="7" placeholder="This will be filled in automatically when you press Encrypt."></textarea>
+          </div>
+        </div>
+      </div>
+	  <br>
+		<hr style="width: 100%; color: black; height: 3px; background-color:red;" />
+		</br>
+	  <div class="row" >
+        <div class="col-md-12">
+          <h2>Reconstruct a Secrets</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6" id="decrypt">
+          <h3>Input</h3>
+          <div class="form-group" id="combine-secrets-group">
+          <h6> <label for="combine-secrets color: red ;">Secrets (one per line)</label></h6>
+            <textarea class="form-control" name="combine-secrets" id="combine-secrets" rows="7" placeholder="Enter the secrets here."></textarea>
+            <span class="glyphicon glyphicon-remove form-control-feedback sr-only" id="combine-secrets-error-icon"></span>
+            <span class="help-block" style="color: #C9302C" id="combine-secrets-error"></span>
+          </div>
+          
+          <button type="button" class="btn btn-primary" id="combine-btn">Decrypt</button>
+        </div>
+        <div class="col-md-6">
+          <h3>Output</h3>
+          
+          <div class="form-group">
+            <label for="combine-output">Shared Secret</label>
+            <textarea class="form-control" name="combine-output" id="combine-output" rows="5" placeholder="This will be filled in automatically when you press Decrypt."></textarea>
+          </div>
+        </div>
+      </div>
+	  
+    </div>
+
+    <script src="bootstrap/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="secrets.js/secrets.min.js"></script>
+    <script src="main.js"></script>
+	<!-- Footer -->
+<footer class="page-footer font-small teal pt-4">
+ <hr class="clearfix w-50 d-md-none pb-3
+
+  <!-- Footer Text -->
+  <div class="container-fluid text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-6 mt-md-0 mt-3">
+
+        <!-- Content -->
+        <h5 class="text-font-weight-bold" id = "sssinfo"> ~ Secret Sharing ~ </h5>
+        <p>A simple implementation of Shamir's Secret Sharing.</p>
+		for more info :
+		<li><a href="https://shorturl.at/imLX7">Link 1</a></li>
+	  <li><a href="https://shorturl.at/bwyRZ">Link 2</a></li>
+      </div>
+    </div>
+	<div>
+
+	</div>
+  </div>
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="https://github.com/ALbaron-Awad"> ! خذ راحتك  </a>
+  </div>
+  
+</footer>
+  </body>
+</html>
