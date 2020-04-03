@@ -7,20 +7,20 @@ for my cryptography course
 
 ## Split a Secrets
 
-Enter the input of your secret into the field.
+ -Enter the input of your secret into the field.
 
-Select the number  of Shares and Thresholds .
+ -Select the number  of Shares and Thresholds .
 
-Copy the encrypted output .
+ -Copy the encrypted output .
 
 
 ## Combine a Secrets
 
-Gather the required  number of Threshold .
+ -Gather the required  number of Threshold .
 
-Enter the content from each Threshold  into the field,line by line .
+ -Enter the content from each Threshold  into the field,line by line .
 
-The original text will be displayed in the field.
+ -The original text will be displayed in the field.
 
 # Testing
 
