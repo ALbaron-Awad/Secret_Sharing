@@ -17,7 +17,6 @@ var defaults = {
 	// warning for insecure PRNG
 	warning: 'WARNING:\nA secure random number generator was not found.\nUsing Math.random(), which is NOT cryptographically strong!'
 };
-
 // Protected settings object
 var config = {};
 
