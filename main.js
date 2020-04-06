@@ -1,6 +1,6 @@
 $().ready(function () {
   
-  //Setup onclick handler for combiner
+  //Setup on-click handler for combiner
   $('#combine-btn').click(function () {
     //Clear any errors
     $('#combine-secrets-group').removeClass('has-error').removeClass('has-feedback');
@@ -14,7 +14,7 @@ $().ready(function () {
     $('#combine-output').val(secrets.hex2str(secret));
   });
   
-  //Setup onclick handler for splitter
+  //Setup on-click handler for splitter
   $('#split-btn').click(function () {
     //Clear any errors
     $('#split-threshold-group').removeClass('has-error').removeClass('has-feedback');
@@ -44,7 +44,7 @@ $().ready(function () {
       $('#split-threshold-error-icon').removeClass('sr-only');
       return false;
     }
-    
+   
     if (isNaN(total)) {
       $('#split-total-error').html('Total must be a number!');
       $('#split-total-group').addClass('has-error').addClass('has-feedback');
