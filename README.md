@@ -30,3 +30,4 @@ Run index.html
 # License
 
 MIT, see [license](https://github.com/iancoleman/shamir/blob/master/license).
+[https://github.com/amper5and/secrets.js]
